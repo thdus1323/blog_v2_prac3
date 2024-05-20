@@ -1,0 +1,39 @@
+{{> layout/header}}
+<div class="d-flex justify-content-center" style="margin-top: 100px; margin-bottom: 100px;">
+    <form action="" method="">
+        <div class="p-3 m-3" style="width: 300px;">
+            <div class="mb-3 mt-3">
+                상 품 ID : <input name="productId" type="text" class="form-control" value="1" readonly>
+            </div>
+            <div class="mb-3 mt-3">
+                상 품 명 : <input name="productName" type="text" class="form-control" value="상품명" readonly>
+            </div>
+            <div class="mb-3 mt-3">
+                상품가격 : <input name="productPrice" type="number" class="form-control" value="상품가격" readonly>
+            </div>
+            <div class="mb-3 mt-3">
+                상품수량 : <input name="productQty" type="number" class="form-control" value="상품수량" readonly>
+            </div>
+
+            <style>
+                .wide-button {
+                    width: 350px;
+                    background-color: blue;
+                    color:white;
+                    border-color: lightblue;
+                    border-radius: 10px;
+                    font-weight: bold;
+                }
+            </style>
+
+            <label for="purQty">구매 수량</label>
+            <input type="number" id="purQty" name="purQty">
+            <br><br><br>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="wide-button">구매결정</button>
+                <br>
+            </div>
+        </div>
+    </form>
+</div>
+{{> layout/footer}}
