@@ -17,7 +17,7 @@ public class Buyer {
     @Id
     private Integer buyerId;
 
-    @Column(unique = true, nullable = false)
+    @Column(unique = true, length = 20, nullable = false)
     private String buyerName;
 
     @Column(nullable = false)

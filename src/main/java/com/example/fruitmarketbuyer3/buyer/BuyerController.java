@@ -18,7 +18,7 @@ public class BuyerController {
         System.out.println("회원가입 : " +reqDTO);
         buyerService.joinByNameAndPwAndEmail(reqDTO);
         System.out.println("나오나?");
-        return "redirect:/"; // 이후 로그인 폼으로 수정.
+        return "redirect:login-form"; // 이후 로그인 폼으로 수정.
     }
 
     @GetMapping("/buyer/join-form")

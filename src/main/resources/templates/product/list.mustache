@@ -15,23 +15,23 @@
             <th class="center-align col-2">상세보기</th>
         </tr>
         </thead>
-
+{{#productList}}
             <tbody>
             <tr class="offer-table">
-                <th scope="row">1</th>
-                <td>상품명</td>
-                <td>상품가격</td>
-                <td>상품수량</td>
+                <th scope="row">{{productId}}</th>
+                <td>{{productName}}</td>
+                <td>{{productPrice}}</td>
+                <td>{{productQty}}</td>
                 <td>
                     <div class="new-create-button">
-                        <form action="/product/1/detail">
+                        <form action="/product/{{productId}}/detail">
                             <button type="submit" class="btn btn-outline-primary">상세보기</button>
                         </form>
                     </div>
                 </td>
             </tr>
             </tbody>
-
+{{/productList}}
     </table>
 </div>
 

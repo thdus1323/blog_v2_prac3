@@ -30,6 +30,5 @@ public class BuyerRepository {
         query.setParameter(2, reqDTO.getBuyerPw());
         Buyer sessionBuyer = (Buyer) query.getSingleResult();
         return sessionBuyer;
-
     }
 }
