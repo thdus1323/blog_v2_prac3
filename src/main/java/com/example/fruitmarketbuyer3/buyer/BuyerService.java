@@ -13,4 +13,9 @@ public class BuyerService {
     public void joinByNameAndPwAndEmail(BuyerRequest.JoinDTO reqDTO){
         buyerRepository.join(reqDTO);
     }
+
+    public Buyer loginByNameAndPw(BuyerRequest.LoginDTO reqDTO){
+        Buyer sesseionBuyer = buyerRepository.login(reqDTO);
+        return sesseionBuyer;
+    }
 }
